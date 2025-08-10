@@ -115,13 +115,18 @@ npm run dev
 The project uses noise algorithm and my own mountain generate algorithm to generate natural terrain. Algorithm flow:
 
 1. Convert 2D image to height map
+   
    1.1 Mountain detect
+   
    1.2 Mountain shape classifier (if there are mountains)
+   
    1.3 Generate peak point --> peak-lines --> ridges (random direction generation segment by segment)
+   
    1.4 Weaken peak points and strengthen peaklines and ridges, and blur
-2. Apply noise to generate terrain variations
-3. Generate 3D mesh model
-4. Export as GLB format
+   
+3. Apply noise to generate terrain variations
+4. Generate 3D mesh model
+5. Export as GLB format
 
 ### Frontend Architecture
 
