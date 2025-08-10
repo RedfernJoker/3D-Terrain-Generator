@@ -1,0 +1,8 @@
+node_modules
+venv
+.venv
+temp
+__pycache__
+py-service/generator-3.pth
+py-service/generator-3-fp16.pth
+*.pth

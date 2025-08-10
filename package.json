@@ -1,0 +1,16 @@
+{
+  "name": "map_d",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": ["frontend", "server"],
+  "scripts": {
+    "dev":    "concurrently \"yarn workspace frontend dev\" \"yarn workspace server dev\"",
+    "build":  "yarn workspace frontend build && yarn workspace server build",
+    "start":  "yarn workspace server start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
